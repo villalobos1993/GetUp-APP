@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fd2ca"
+    tools:context=".Activitys.GastoTiempo">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/breakfast" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="120dp"
+        android:layout_height="128dp"
+        android:layout_above="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15"
+        app:srcCompat="@drawable/shower" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_below="@+id/imageView21"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/getup" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView18"
+        android:layout_marginTop="81dp"
+        app:srcCompat="@drawable/goingtowork2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView15"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/textView17"
+        android:text="Tiempo de media"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/txtdesayuno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView15"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_marginBottom="39dp"
+        android:text="sdfsdf"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/txtducha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView15"
+        android:layout_alignStart="@+id/txtdesayuno"
+        android:layout_marginBottom="37dp"
+        android:text="sdfsdf"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/txtrecorrido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView18"
+        android:layout_alignEnd="@+id/txtdespertar"
+        android:layout_marginBottom="24dp"
+        android:text="sdfdgf"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/txtdespertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView18"
+        android:layout_alignStart="@+id/txtducha"
+        android:layout_marginBottom="38dp"
+        android:text="sdfsdf"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/txtotros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignStart="@+id/txtdesayuno"
+        android:text="sdfsdf"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17"
+        android:text="Otras Actividades"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+</RelativeLayout>

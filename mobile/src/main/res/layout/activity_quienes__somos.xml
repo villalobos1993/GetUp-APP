@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fd2ca"
+    tools:context="com.example.castriwolf.getup2.Activitys.Quienes_Somos">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/castrillon" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="209dp"
+        android:layout_height="285dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/villalobos" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:srcCompat="@drawable/iconoletras" />
+
+    <TextView
+        android:id="@+id/textoquienessomos"
+        android:layout_width="356dp"
+        android:layout_height="259dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="34dp"
+        android:text="Somos Alejandro Villalobos y Pablo Castrillón, alumnos de CENEC Málaga.\n Sabiendo los atascos que se crean en las grandes ciudades y lo dificil que es para mucha gente despertarse por las mañanas, hemos decidio crear GetUp! una aplicación que no solo te dirá a la hora exacta que te tienes que levantar, sino que también no dejará de sonar hasta que camines 30 pasos!Ya no hay excusa para llegar tarde al trabajo y no levantarse a la primera, asique ya sabes...GetUp!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+</android.support.constraint.ConstraintLayout>

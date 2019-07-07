@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fd2ca"
+    tools:context="com.example.castriwolf.getup2.Activitys.Preferencias_Alarma">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="134dp"
+        android:text="Borrar todas las alarmas"
+        android:textColor="@android:color/background_dark" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginEnd="98dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="60dp"
+        android:autoText="false"
+        android:text="Vibracion de la alarma"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="212dp"
+        android:text="Editar pasos despertar"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <ImageView
+        android:id="@+id/borrar"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="94dp"
+        app:srcCompat="@drawable/icons8eliminar48" />
+
+    <ImageView
+        android:id="@+id/editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="106dp"
+        app:srcCompat="@drawable/editar" />
+
+
+</RelativeLayout>

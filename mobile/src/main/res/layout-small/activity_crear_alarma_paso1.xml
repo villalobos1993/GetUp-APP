@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fd2ca"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".Activitys.Crear_Alarma_Paso1"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="312dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:text="        Indicanos la hora de llegada a tu destino"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/timePicker3"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_marginBottom="11dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+    </TimePicker>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="259dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Indicanos los dias que sonará la alarma:"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="276dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker3"
+        app:layout_constraintVertical_bias="0.304">
+
+        <ImageButton
+            android:id="@+id/toggleButtonLunes"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/icons8lunes40" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonMartes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icons8martes40" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonMiercoles"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/toggleButtonJueves"
+            android:layout_weight="1"
+            android:src="@drawable/icons8miercoles40"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonJueves"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/toggleButtonMiercoles"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@+id/toggleButtonViernes"
+            android:src="@drawable/icons8jueves40"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonViernes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/toggleButtonMiercoles"
+            android:layout_alignBottom="@+id/toggleButtonMiercoles"
+
+            android:layout_gravity="center"
+            android:src="@drawable/icons8viernes40"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonSabado"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/toggleButtonLunes"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8sabado40"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <ImageButton
+            android:id="@+id/toggleButtonDomingo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/toggleButtonMartes"
+            android:src="@drawable/icons8domingo40"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            tools:layout_editor_absoluteX="360dp"
+            tools:layout_editor_absoluteY="405dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="28dp"
+
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/next"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="117dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="418dp" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="460dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="558dp" />
+
+</android.support.constraint.ConstraintLayout>

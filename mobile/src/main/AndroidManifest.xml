@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.castriwolf.getup2">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.cristinavilas.getup.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alarma_copy"
+        android:label="GetUp!"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activitys.Entrada_App"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.Crear_Alarma_Paso1"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Pasos_Despertar"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Menu_Alarma"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activitys.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Crear_Alarma_Paso3"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Crear_Alarma_Paso4"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Crear_Alarma_Paso5"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Resumen"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Crear_Alarma_Paso6"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Preferencias_Alarma"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+
+        <service
+            android:name=".Clases.MyNewIntentService"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+
+        <activity
+            android:name=".Activitys.StepCounter"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.GastoTiempo"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+
+        <receiver
+            android:name=".Clases.MyAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Activitys.PararAlarma"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Clases.Pantalla_Alarma"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity
+            android:name=".Activitys.Quienes_Somos"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp" />
+        <activity android:name=".Activitys.Editar_Alarma"
+            android:screenOrientation="portrait"
+            android:theme="@style/GetUp"
+        />
+    </application>
+
+</manifest>
